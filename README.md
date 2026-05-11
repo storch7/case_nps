@@ -2,7 +2,7 @@
 
 Este projeto realiza a extração e o processamento de comentários de uma pesquisa de NPS (Net Promoter Score), aplicando técnicas de Processamento de Linguagem Natural (NLP) para analisar o sentimento dos clientes e extrair automaticamente os principais temas abordados.
 
-## 📦 Bibliotecas Utilizadas
+## Bibliotecas Utilizadas
 
 As principais bibliotecas que tornaram essa automação possível foram:
 
@@ -12,7 +12,7 @@ As principais bibliotecas que tornaram essa automação possível foram:
 - **[nbformat](https://nbformat.readthedocs.io/):** Geração e manipulação programática de arquivos Jupyter Notebook.
 - **[Pytest](https://docs.pytest.org/):** Framework utilizado para criação de testes automatizados e validação de regras de negócio.
 
-## ⚙️ Onde e Como Foram Aplicadas
+## Onde e Como Foram Aplicadas
 
 - **Análise de Sentimentos (`src/sentiment_analyzer.py`):**
   O **TextBlob** foi utilizado para avaliar semanticamente cada comentário da base. A biblioteca calcula a *polaridade* do texto e, a partir desse valor, o código aplica uma regra de negócio para classificar a resposta em `Positive` (polaridade > 0), `Negative` (polaridade < 0) ou `Neutral`.
@@ -29,7 +29,7 @@ As principais bibliotecas que tornaram essa automação possível foram:
 - **Testes Unitários (`tests/`):**
   O **Pytest** foi aplicado para construir cenários que garantem a confiabilidade da nossa esteira: verificando como o código lida com comentários vazios, objetos `None` e se as classificações matemáticas convergem para o resultado esperado.
 
-## 🎯 Resultados Obtidos
+## Resultados Obtidos
 
 Ao final da execução da pipeline (rodando o `src/main.py`), a empresa alcança os seguintes resultados:
 
