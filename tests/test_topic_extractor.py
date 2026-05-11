@@ -1,5 +1,5 @@
 import pytest
-from topic_extractor import extract_topics, assign_topics
+from src.topic_extractor import extract_topics, assign_topics
 
 def test_extract_topics_valid_texts():
     texts = [

@@ -1,7 +1,7 @@
 import nbformat as nbf
 
 # Ler o notebook existente
-with open('extracao.ipynb', 'r', encoding='utf-8') as f:
+with open('../notebooks/extracao.ipynb', 'r', encoding='utf-8') as f:
     nb = nbf.read(f, as_version=4)
 
 # Criar nova célula com a extração de tópicos
@@ -21,5 +21,5 @@ for tema in temas:
 nb.cells.append(nbf.v4.new_code_cell(code_topic))
 
 # Salvar o notebook atualizado
-with open('extracao.ipynb', 'w', encoding='utf-8') as f:
+with open('../notebooks/extracao.ipynb', 'w', encoding='utf-8') as f:
     nbf.write(nb, f)

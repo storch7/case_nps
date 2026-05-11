@@ -1,5 +1,5 @@
 import pytest
-from sentiment_analyzer import get_sentiment
+from src.sentiment_analyzer import get_sentiment
 
 def test_get_sentiment_positive():
     text = "The product is amazing and I love it!"
